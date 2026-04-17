@@ -1,6 +1,6 @@
 FROM python:3.12-alpine
 
-WORKDIR /app
+WORKDIR /app__2
 
 # Copy dependencies first (for caching)
 COPY requirements.txt .
@@ -15,6 +15,6 @@ COPY . .
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 
-EXPOSE 5000
+EXPOSE 5001
 
 CMD ["flask", "run"]
