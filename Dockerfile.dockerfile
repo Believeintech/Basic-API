@@ -1,6 +1,6 @@
 FROM python:3.12-alpine
 
-WORKDIR /app_1
+WORKDIR /app__2
 
 # Copy dependencies first (for caching)
 COPY requirements.txt .
